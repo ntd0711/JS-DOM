@@ -40,8 +40,8 @@ function isMatchSearch(todoElement, searchTerm) {
 }
 
 function isMatchStatus(todoElement, filterStatus) {
-  // if (filterStatus === null) return true;
-  return filterStatus === null || todoElement.dataset.status === filterStatus;
+  if (filterStatus === null) return true;
+  return filterStatus === 'all' || todoElement.dataset.status === filterStatus;
 }
 
 function isMatch(todoElement, params) {

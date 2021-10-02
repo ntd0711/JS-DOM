@@ -206,9 +206,9 @@ const handleCheck = (e) => {
 };
 
 (function () {
-  const clubs = getTodoList();
+  const todoList = getTodoList();
 
-  renderTodoList('todoList', clubs);
+  renderTodoList('todoList', todoList);
 
   const todoForm = document.getElementById('todo-from-id');
   if (!todoForm) return;
